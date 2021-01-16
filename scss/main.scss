@@ -2,7 +2,7 @@
 @import 'utilities';
 @import 'item_grid';
 
-// General Styles
+// General styles
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +34,7 @@ img {
 }
 
 // Logo
+
 #logo {
   width: 70px;
   height: 70px;
@@ -42,6 +43,7 @@ img {
 }
 
 // Main Nav
+
 #main-nav {
   display: flex;
   justify-content: space-between;
@@ -57,9 +59,9 @@ img {
 
   a {
     text-decoration: none;
-    color: #fff;
     text-transform: uppercase;
-    border-bottom: 3px transparent solid;
+    color: #fff;
+    border-bottom: 1px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.5s;
 
@@ -74,8 +76,9 @@ img {
 }
 
 // Header
+
 #header {
-  // Header Home
+  //Header Home
   &-home {
     background: $bg-image no-repeat center right / cover;
     height: 100vh;
@@ -97,11 +100,11 @@ img {
   &-inner {
     background: $bg-image no-repeat 20% 30% / cover;
     height: 5.5rem;
-    border-bottom: 3px solid $main-color;
   }
 }
 
 // Home Sections
+
 #home {
   // Home Section A
   &-a {
@@ -118,7 +121,6 @@ img {
     }
   }
 
-  // Home Section B
   &-b {
     .stats {
       display: grid;
@@ -141,11 +143,11 @@ img {
         padding: 3rem 0;
 
         &:nth-child(odd) {
-          background: $light-color;
+          background-color: $light-color;
         }
 
         &:nth-child(even) {
-          background: $medium-color;
+          background-color: $medium-color;
         }
       }
     }
@@ -159,27 +161,10 @@ img {
       grid-gap: 1.5rem;
       text-align: center;
 
-      // process-step
-      &-step {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 28px;
-        background: $main-color;
-        color: set-text-color($main-color);
-        border-radius: 50%;
-        height: 15px;
-        width: 15px;
-        line-height: 15px;
-        padding: 1rem;
-        transition: all 1s;
-      }
-
-      // process-icon
       &-icon {
         border-radius: 50%;
         background: $dark-color;
-        color: set-text-color($dark-color);
+        color: #fff;
         padding: 2rem;
         width: 70px;
         height: 70px;
@@ -196,17 +181,30 @@ img {
 
           .process-step {
             background: $dark-color;
-            color: set-text-color($dark-color);
           }
         }
+      }
+
+      &-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 28px;
+        background: $main-color;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        line-height: 15px;
+        padding: 1rem;
+        transition: all 1s;
       }
     }
   }
 }
 
 // About Sections
+
 #about {
-  // About A
   &-a {
     .about-info {
       display: grid;
@@ -242,11 +240,11 @@ img {
     .award-1 .fas,
     .award-2 .fas,
     .award-3 .fas {
-      color: $main-color;
+      color: #main;
       margin: 1rem;
     }
   }
-  // About B
+
   &-b {
     .progress {
       overflow: hidden;
@@ -263,18 +261,20 @@ img {
       }
     }
   }
+
   // About C
   &-c {
     .about-logos {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 2rem;
+    }
 
-      img {
-        width: 70%;
-      }
+    img {
+      width: 70%;
     }
   }
+
   // About D
   &-d {
     .testimonials {
@@ -306,6 +306,7 @@ img {
 }
 
 // Contact Page
+
 #contact {
   &-a {
     .text-fields {
@@ -317,15 +318,15 @@ img {
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
-      // Grid Areas
+      //   Grid Areas
       .name-input {
         grid-area: name;
       }
-      .subject-input {
-        grid-area: subject;
-      }
       .email-input {
         grid-area: email;
+      }
+      .subject-input {
+        grid-area: subject;
       }
       .phone-input {
         grid-area: phone;
@@ -334,12 +335,10 @@ img {
         grid-area: message;
         height: 100px;
       }
-
       .text-input {
         padding: 0.5rem 1rem;
       }
     }
-
     button[type='submit'] {
       width: 50%;
     }
@@ -390,5 +389,5 @@ img {
   }
 }
 
-// Import Media Queries
+// Media Queries
 @import 'media';

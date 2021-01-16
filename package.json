@@ -9,6 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.11.0"
-  }
+    "node-sass": "^4.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradtraversy/portfolio_website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bradtraversy/portfolio_website/issues"
+  },
+  "homepage": "https://github.com/bradtraversy/portfolio_website#readme"
 }

@@ -24,16 +24,18 @@
   }
 
   // Bring in main color overlay
+
   &:hover:after {
     transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
   }
+  //   Scale image on hover
 
-  // Scale image on hover
   &:hover &-image {
     transform: scale(1.2);
   }
 
-  // Bring in text on hover
+  // Bring in thext on hover
+
   &:hover &-text {
     opacity: 1;
     transform: translateY(0);
@@ -74,8 +76,8 @@
     color: #fff;
     transform: translateY(-20%);
     transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
-      transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
-    transition-delay: 300ms;
+      transform 500ms cubic-bezier(0.2, 1, 0.3, 1) t;
+    transition-delay: 500ms;
   }
 
   &-text-wrap {
